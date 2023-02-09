@@ -1,0 +1,13 @@
+n=input('Enter the Year: ')
+if n.isdigit() and int(n):
+    n=int(n)
+    if(n<0):
+        print("enter a valid year!")
+    elif (n%400==0) and (n%100!=0):
+        print(n," leap year.")
+    elif (n%4==0)and (n%100!=0):
+        print(n,"leap year")
+    else:
+        print(n,"not a leap year")
+else:
+    print("enter a valid year!")
